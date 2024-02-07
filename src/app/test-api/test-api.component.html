@@ -1,0 +1,7 @@
+<button (click)="callApiSuccess()">Call Successful API</button>
+<button (click)="callApiError()">Call Error API</button>
+
+<h3>API Response:</h3>
+<div *ngIf="apiResponse">
+  <pre>{{ apiResponse | json }}</pre>
+</div>
